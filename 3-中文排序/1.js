@@ -1,0 +1,1 @@
+['王成成','王峰', '蒋雪', '李明'].sort((a,b) => a.localeCompare(b, 'zh'))
