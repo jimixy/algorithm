@@ -45,7 +45,7 @@ var dfs2 = function(nodes) {
   var stack = []
   stack.push(nodes)
   while (stack.length) {
-    console.log('stack', stack);
+    // console.log('stack', stack);
     var item = stack.pop()
     result.push(item.node)
     item.right && stack.push(item.right)
@@ -53,7 +53,7 @@ var dfs2 = function(nodes) {
   }
   return result
 }
-console.log(dfs2(nodes))
+// console.log(dfs2(nodes))
 
 /**
 * 广度优先遍历
