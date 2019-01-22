@@ -1,4 +1,6 @@
-
+/**
+* 二叉树的遍历
+*/
 var nodes = {
   node: 6,
   left: {
