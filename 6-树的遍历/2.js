@@ -53,6 +53,10 @@ var dfs2 = function(nodes) {
 }
 console.log(dfs2(nodes))
 
+/**
+* 广度优先遍历
+* 优点：不会打乱数据结构
+**/
 
 // 3 广度优先-递归
 var result = []
@@ -69,7 +73,7 @@ var bfs3 = function(count) {
     if(right) {
       queue.push(right)
     }
-    bfs(++count)
+    bfs3(++count)
   }
 }
 dfs3()
@@ -84,7 +88,7 @@ var bfs4 = function(nodes) {
   while(pointer < queue.length) {
     var item = queue[pointer++] // 这里不使用 shift 方法（复杂度高），用一个指针代替
     result.push(item.node)
-    console.log(item.node)
+    //console.log(item.node)
     item.left && queue.push(item.left)
     item.right && queue.push(item.right)
   }
