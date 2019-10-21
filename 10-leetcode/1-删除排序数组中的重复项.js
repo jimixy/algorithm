@@ -1,5 +1,6 @@
 // https://github.com/azl397985856/leetcode/blob/master/problems/26.remove-duplicates-from-sorted-array.md
 
+// 双指针遍历
 var removeDuplicates = function(nums) {
     const size = nums.length
     let slowP = 0
